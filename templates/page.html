@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Markdown Wiki</title>
-    <link rel="stylesheet" href="../../style/main.css" type="text/css">
+    <link rel="stylesheet" href="/style/main.css" type="text/css">
   </head>
   <body>
     <div id="account"></div>
@@ -10,15 +10,16 @@
     <h1>{{title}}</h1>
 
     <div id="profile"></div>
-
+    <div id="wiki">{{{body}}}</div>
   </body>
-  <script src="../../vendor/couchapp/loader.js"></script>
+  <script src="/script/myloader.js"></script>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       $("#account").evently("account", app);
       $("#profile").evently("profile", app);
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
-      $("#items").evently("items", app);
+      $("#wiki").evently("wiki", app);
+      $.pathbinder.begin("/")
     },{
       db : "pages",
       design : "pages"
