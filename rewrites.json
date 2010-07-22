@@ -1,0 +1,26 @@
+[
+  {
+    "from" : "",
+    "to" : "_show/page/index"
+  },
+  {
+    "from" : "script/*",
+    "to" : "script/*"
+  },
+  {
+    "from" : "style/*",
+    "to" : "style/*"
+  },
+  {
+    "from" : "vendor/*",
+    "to" : "vendor/*"
+  },
+  {
+    "from" : "/page/*",
+    "to" : "_show/page/*"
+  },
+  {
+    "from" : "pages/*",
+    "to" : "../../*"
+  }
+]

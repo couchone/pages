@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Markdown Wiki</title>
+    <link rel="stylesheet" href="../../style/main.css" type="text/css">
+  </head>
+  <body>
+    <div id="account"></div>
+
+    <h1>{{title}}</h1>
+
+    <div id="profile"></div>
+
+  </body>
+  <script src="../../vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      $("#account").evently("account", app);
+      $("#profile").evently("profile", app);
+      $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
+      $("#items").evently("items", app);
+    },{
+      db : "pages",
+      design : "pages"
+    });
+  </script>
+</html>
