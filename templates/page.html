@@ -18,8 +18,9 @@
       $("#account").evently("account", app);
       $("#profile").evently("profile", app);
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
+      $$("#wiki").docid = {{docid}};
       $("#wiki").evently("wiki", app);
-      $.pathbinder.begin("/")
+      $.pathbinder.begin("/");
     },{
       db : "pages",
       design : "pages"

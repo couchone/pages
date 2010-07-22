@@ -93,7 +93,6 @@ function $$(node) {
     }
 
     if (typeof events == "string") {
-      $.log(events)
       events = extractEvents(events, app.ddoc);
     }
 
@@ -123,7 +122,6 @@ function $$(node) {
   // eventlyHandler applies the user's handler (h) to the 
   // elem, bound to trigger based on name.
   function eventlyHandler(elem, name, h, args) {
-    $.log(name, h)
     if (h.path) {
       elem.pathbinder(name, h.path);
     }
