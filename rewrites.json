@@ -1,7 +1,7 @@
 [
   {
     "from" : "",
-    "to" : "_show/page/index"
+    "to" : "_show/redirect"
   },
   {
     "from" : "script/*",
@@ -14,6 +14,10 @@
   {
     "from" : "vendor/*",
     "to" : "vendor/*"
+  },
+  {
+    "from" : "/page",
+    "to" : "_show/redirect"
   },
   {
     "from" : "/page/*",
