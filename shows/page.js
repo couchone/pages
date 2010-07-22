@@ -1,16 +1,19 @@
-function(doc, req) {  
+function(doc, req) {
   var ddoc = this,
     mustache = require("vendor/couchapp/lib/mustache"),
     markdown = require("vendor/couchapp/lib/markdown"),
-    data = {};
+    data = {
+      docid : JSON.stringify(req.id)
+    };
   if (doc) {
-    data.docid = JSON.stringify(doc._id);
     if (doc.markdown) {
       data.body = markdown.encode(doc.markdown);
     }
     data.title = doc.title;
+    data.begin = "/";
   } else {
-    data.title = "No page";
+    data.title = "Create page: "+req.id;
+    data.begin = "/edit";
   }
   return mustache.to_html(ddoc.templates.page, data);
 }

@@ -20,7 +20,7 @@
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
       $$("#wiki").docid = {{docid}};
       $("#wiki").evently("wiki", app);
-      $.pathbinder.begin("/");
+      $.pathbinder.begin("{{begin}}");
     },{
       db : "pages",
       design : "pages"
