@@ -5,6 +5,7 @@ function(doc, req) {
     data = {
       docid : JSON.stringify(req.id),
       id : req.id,
+      path : "/page/"+req.id,
       site_title : this.couchapp.name
     };
   if (doc) {
@@ -17,5 +18,5 @@ function(doc, req) {
     data.title = "Create page: "+req.id;
     data.begin = "/edit";
   }
-  return mustache.to_html(ddoc.templates.page, data);
+  return mustache.to_html(ddoc.templates.page, data, ddoc.templates.partials);
 }

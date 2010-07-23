@@ -24,6 +24,10 @@
     "to" : "_show/page/*"
   },
   {
+    "from" : "/pages/all",
+    "to" : "_list/pages/recent-changes"
+  },
+  {
     "from" : "pages/*",
     "to" : "../../*"
   }
