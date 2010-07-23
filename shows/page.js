@@ -4,6 +4,7 @@ function(doc, req) {
     markdown = require("vendor/couchapp/lib/markdown"),
     data = {
       docid : JSON.stringify(req.id),
+      id : req.id,
       site_title : this.couchapp.name
     };
   if (doc) {

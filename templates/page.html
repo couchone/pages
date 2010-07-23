@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{site_title}} - {{title}}</title>
+    <title>{{title}} - {{site_title}}</title>
+    <link rel="stylesheet" href="/style/base-min.css" type="text/css">
     <link rel="stylesheet" href="/style/main.css" type="text/css">
   </head>
   <body>
-    <div id="account"></div>
+    
+    <div id="header">
+      <div id="account"></div>      
+      <h1><strong>{{site_title}}:</strong> <a href="/page/{{id}}">{{title}}</a></h1>
+    </div>
+    
 
-    <h1>{{site_title}} - {{title}}</h1>
 
     <div id="profile"></div>
     <div id="wiki">{{{body}}}</div>
