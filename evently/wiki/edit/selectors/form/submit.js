@@ -28,7 +28,8 @@ function() {
   } else {
     // create a new page
     saveDoc({
-      _id : f._id
+      _id : f._id,
+      "jquery.couch.attachPrevRev" : true
     });
   }
   return false;
