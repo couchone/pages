@@ -3,7 +3,8 @@ function(doc, req) {
     mustache = require("vendor/couchapp/lib/mustache"),
     markdown = require("vendor/couchapp/lib/markdown"),
     data = {
-      docid : JSON.stringify(req.id)
+      docid : JSON.stringify(req.id),
+      site_title : this.couchapp.name
     };
   if (doc) {
     if (doc.markdown) {
