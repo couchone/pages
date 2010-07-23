@@ -1,8 +1,19 @@
 {{>header}}
     <div id="wiki">{{{body}}}</div>
+    {{#has_atts}}
+    <div id="files">
+      <p>Files attached to <em>{{title}}</em>:</p>
+      <ul>
+        {{#atts}}
+          <li><a href="{{uri}}">{{name}}</a> ({{type}})</li>
+        {{/atts}}
+      </ul>
+    </div>
+    {{/has_atts}}
   </body>
   <script src="/script/myloader.js"></script>
   <script src="/_utils/script/base64.js"></script>
+  <script src="/_utils/script/jquery.form.js"></script>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       $("#account").evently("account", app);

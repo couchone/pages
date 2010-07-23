@@ -42,6 +42,13 @@ p.menu a {
   margin:8px;
 }
 
+#files {
+  border-bottom:1px solid #abc;
+  border-top:1px solid #abc;
+  background:#cde;
+  padding:8px;
+}
+
 form {
   padding:4px;
   margin:6px;
