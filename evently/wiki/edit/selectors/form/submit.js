@@ -9,8 +9,10 @@ function() {
     doc.log = doc.log || [];
     doc.log.push({
       note : f.note,
-      edit_rev : f._rev,
-      edit_name : doc.edit_by.name
+      prev_rev : f._rev,
+      rev_num : (parseInt(f._rev.split("-")[0]) + 1) || 1,
+      edit_name : doc.edit_by.name,
+      edit_at : doc.edit_at
     });
     app.db.saveDoc(doc, {
       success : function() {

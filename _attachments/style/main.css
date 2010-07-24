@@ -39,6 +39,15 @@ p.menu a {
   border-radius: 5px;
 }
 
+#tools {
+  float:right;
+  clear:right;
+  border-bottom:1px solid #abc;
+  border-top:1px solid #abc;
+  background:#cde;
+  padding:8px;
+}
+
 #wiki {
   margin:8px;
 }

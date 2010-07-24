@@ -1,4 +1,5 @@
 {{>header}}
+    <div id="tools"></div>
     <div id="wiki">{{{body}}}</div>
     {{#has_atts}}
     <div id="files">
@@ -21,6 +22,7 @@
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
       $$("#wiki").docid = {{docid}};
       $("#wiki").evently("wiki", app);
+      $("#tools").evently("tools", app);
       $.pathbinder.begin("{{begin}}");
     },{
       db : "pages",

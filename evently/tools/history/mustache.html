@@ -1,0 +1,11 @@
+<div class="versions">
+  <h4>Versions of {{title}}</h4>
+  <ul>
+    {{#versions}}
+    <li>
+      <a href="#/revision/{{rev}}">{{rev}} {{#name}} by {{name}}{{/name}}</a>
+      {{#note}}: {{note}}{{/note}}
+    </li>
+    {{/versions}}
+  </ul>
+</div>
