@@ -24,6 +24,7 @@ h1 {
   border-top:1px solid #abc;
   background:#cde;
   margin-bottom:8px;
+  float:right;
 }
 
 p.menu {
