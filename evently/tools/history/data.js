@@ -33,10 +33,12 @@ function(doc) {
       log = doc.log[j];
       if (log.rev_num == i) break;
       // backwards compatibility for jchris's docs
-      if (parseInt(log.prev_rev || log.edit_rev) == i) break;
+      if ((parseInt(log.prev_rev || log.edit_rev) + 1) == i) break;
       log = {};
     };
     versions.push({
+      available : !!stub,
+      missing : !stub,
       rev : i == parseInt(doc._rev) ? "current" : i,
       name : log.edit_name,
       note : log.note

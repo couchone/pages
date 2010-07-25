@@ -3,7 +3,12 @@
   <ul>
     {{#versions}}
     <li>
-      <a href="#/version/{{rev}}">{{rev}} {{#name}} by {{name}}{{/name}}</a>
+      {{#available}}
+        <a href="#/version/{{rev}}">{{rev}} {{#name}} by {{name}}{{/name}}</a>
+      {{/available}}
+      {{#missing}}
+        {{rev}} {{#name}} by {{name}}{{/name}}
+      {{/missing}}
       {{#note}}: {{note}}{{/note}}
     </li>
     {{/versions}}
