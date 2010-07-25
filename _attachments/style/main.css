@@ -46,6 +46,7 @@ p.menu a {
   border-top:1px solid #abc;
   background:#cde;
   padding:8px;
+  max-width:35%;
 }
 
 #wiki {
@@ -57,6 +58,27 @@ p.menu a {
   border-top:1px solid #abc;
   background:#cde;
   padding:8px;
+}
+
+.markdown-help {
+  float:left;
+  margin-left:20px;
+  width:37%;
+}
+
+.markdown-help pre {
+  overflow-x:auto;
+  background:#bbb;
+  padding:4px;
+}
+
+.edit-form {
+  float:left;
+  width:60%;
+}
+
+textarea[name=markdown] {
+  width:100%;
 }
 
 form {
@@ -83,4 +105,8 @@ div.avatar img {
   padding:0;
   width : 40px;
   height : 40px;
+}
+
+.clear {
+  clear:both;
 }

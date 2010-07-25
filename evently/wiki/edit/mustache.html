@@ -1,11 +1,19 @@
 
 <form>
+<div class="edit-form">
   <p>Editing: <a href="/page/{{_id}}">/page/{{_id}}</a></p>
   <p><label>Title: <input type="text" name="title" value="{{title}}"></label></p>
   <p>Page body: <a target="_new" href="http://warpedvisions.org/projects/markdown-cheat-sheet/">Get Markdown syntax help (in new window).</a>
   </p>
   <input type="hidden" name="_rev" value="{{_rev}}">
   <input type="hidden" name="_id" value="{{_id}}">
-  <textarea name="markdown" rows="30" cols="80">{{markdown}}</textarea>
-  <p><label>Optional description: <input size="60" type="text" name="note" value="{{note}}"></label> <input type="submit" value="Save Changes"></p>
+  <textarea name="markdown" rows="30" cols="70">{{markdown}}</textarea>
+  <p><label>Optional description: <input size="60" type="text" name="note" value="{{note}}"></label> 
+    <input type="submit" value="Save Changes">
+    <input type="button" name="preview" value="Preview">
+  </p>
+  <div class="preview"></div>
+</div>
+  {{>help}}
+<div class="clear"></div>
 </form>
