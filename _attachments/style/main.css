@@ -77,6 +77,11 @@ p.menu a {
   width:60%;
 }
 
+.preview {
+  background:#eee;
+  padding:4px;
+}
+
 textarea[name=markdown] {
   width:100%;
 }
