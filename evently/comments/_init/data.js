@@ -6,9 +6,10 @@ function(view) {
     topic : docid,
     title : $$("#wiki").title,
     comments : view.rows.map(function(r) {
+      var by = r.value.by || {};
       return {
-        gravatar_url : r.value.by.gravatar_url,
-        by : r.value.by.nickname,
+        gravatar_url : by.gravatar_url,
+        by : by.nickname,
         at : r.key[1],
         comment : linkup.encode(r.value.comment) // move to view
       }
