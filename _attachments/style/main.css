@@ -53,6 +53,30 @@ p.menu a {
   margin:8px;
 }
 
+#comments {
+  margin:4px;
+  padding:4px;
+  background:#efeeef;
+}
+
+#comments p {
+  margin-bottom:4px;
+}
+
+#comments li {
+  margin:4px;
+  padding:4px;
+  background:#dfdcdf;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.date {
+  font-size:80%
+}
+
 #files {
   border-bottom:1px solid #abc;
   border-top:1px solid #abc;
