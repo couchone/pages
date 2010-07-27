@@ -22,6 +22,7 @@
       $("#profile").evently("profile", app);
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
       $$("#wiki").docid = {{docid}};
+      $$("#wiki").title = {{title_json}};
       $("#wiki").evently("wiki", app);
       $("#comments").evently("comments", app);
       $("#tools").evently("tools", app);

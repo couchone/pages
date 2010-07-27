@@ -4,6 +4,7 @@ function(view) {
   
   return {
     topic : docid,
+    title : $$("#wiki").title,
     comments : view.rows.map(function(r) {
       return {
         gravatar_url : r.value.by.gravatar_url,

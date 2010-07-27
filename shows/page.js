@@ -13,6 +13,7 @@ function(doc, req) {
       data.body = markdown.encode(doc.markdown);
     }
     data.title = doc.title;
+    data.title_json = JSON.stringify(doc.title);
     data.begin = "/";
     data.atts = [];
     if (doc._attachments) {
