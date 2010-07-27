@@ -33,6 +33,7 @@ function(doc, req) {
     }
   } else {
     data.title = "Create page: "+req.id;
+    data.title_json = JSON.stringify(data.title);
     data.begin = "/edit";
   }
   return mustache.to_html(ddoc.templates.page, data, ddoc.templates.partials);
