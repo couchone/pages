@@ -25,7 +25,10 @@
   },
   {
     "from" : "/pages/all",
-    "to" : "_list/pages/recent-changes"
+    "to" : "_list/pages/recent-changes",
+    "query" : {
+      "descending" : true
+    }
   },
   {
     "from" : "/pages/recent",

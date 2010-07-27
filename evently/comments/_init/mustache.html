@@ -1,0 +1,23 @@
+<h3>Comments about {{title}}</h3>
+<ul>
+  {{#comments}}
+  <li>
+    <div class="avatar">
+      {{#gravatar_url}}<img src="{{gravatar_url}}"/>{{/gravatar_url}}
+      <div class="name">
+        {{nickname}}
+      </div>
+    </div>
+  
+      <p>{{{comment}}}</p>
+      <em><span class="date">{{at}}</span></em>
+  </li>
+  {{/comments}}
+</ul>
+<form>
+  <label>Comment (w/ <a href="http://github.com/couchapp/couchapp" target="_new">linkup</a>)</label>
+  <br/>
+  <input type="text" size="60" name="comment">
+   <input type="hidden" name="topic" value="{{topic}}">
+  <p><input type="submit" value="Save Comment"></p>
+</form>
