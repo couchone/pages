@@ -10,6 +10,10 @@ h1 {
   font-size:2em;
 }
 
+a.missing {
+  color : #d00;
+}
+
 #header {
   background:#f3f3f7;
   padding:8px;
