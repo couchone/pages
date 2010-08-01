@@ -54,7 +54,16 @@ p.menu a {
 }
 
 #wiki {
+  width:65%;
   margin:8px;
+}
+
+#wiki pre {
+  background:#ddd;
+  padding:4px;
+}
+#wiki code {
+  background:#ddd;
 }
 
 #comments {
