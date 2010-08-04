@@ -57,7 +57,7 @@ p.menu a {
   max-width:35%;
 }
 
-#wiki {
+#wiki .wiki {
   width:65%;
   margin:8px;
 }
@@ -101,9 +101,9 @@ p.menu a {
   padding:8px;
 }
 
-.markdown-help {
-  float:left;
-  margin-left:20px;
+.preview {
+  float:right;
+  font-size:80%;
   width:37%;
 }
 
