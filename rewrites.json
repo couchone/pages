@@ -38,6 +38,13 @@
     }
   },
   {
+    "from" : "/pages/comments",
+    "to" : "_list/comments/all-comments",
+    "query" : {
+      "descending" : true
+    }
+  },
+  {
     "from" : "pages/*",
     "to" : "../../*"
   }
