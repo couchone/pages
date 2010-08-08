@@ -1,24 +1,17 @@
 
-<form class="wiki_edit_form clearfix">
-  <h2>Editing: <a href="/page/{{_id}}">/page/{{_id}}</a></h2>
-  
-  <div class="span6">
-    <div class="edit-form">
-      <p><label>Title: <input type="text" name="title" value="{{title}}"></label></p>
-      <input type="hidden" name="_rev" value="{{_rev}}">
-      <input type="hidden" name="_id" value="{{_id}}">
-      <textarea name="markdown">{{markdown}}</textarea>
-      <p><label>Optional description: <input size="60" type="text" name="note" value="{{note}}"></label> 
-        <input type="submit" value="Save Changes">
-      </p>
-    </div>
-    {{>help}}
-  </div>
-
-  <div class="span6 last preview_container">
-    <p class="preview_hint">Preview</p>
-    
-    <div class="preview"></div>
-  </div>
-  
+<form>
+<div class="edit-form">
+  <p>Editing: <a href="/page/{{_id}}">/page/{{_id}}</a></p>
+  <p><label>Title: <input type="text" name="title" value="{{title}}"></label></p>
+  <input type="hidden" name="_rev" value="{{_rev}}">
+  <input type="hidden" name="_id" value="{{_id}}">
+  <textarea name="markdown" rows="30" cols="70">{{markdown}}</textarea>
+  <p><label>Optional description: <input size="60" type="text" name="note" value="{{note}}"></label> 
+    <input type="submit" value="Save Changes">
+    <input type="button" name="preview" value="Preview">
+  </p>
+  <div class="preview"></div>
+</div>
+  {{>help}}
+<div class="clear"></div>
 </form>

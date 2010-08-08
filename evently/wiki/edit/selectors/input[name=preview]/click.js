@@ -1,5 +1,5 @@
 function() {
-  var form = $(this).parents("form"), app = $$(this).app,
+  var form = $(this).parents("form"), app = $$(form).app,
     f = form.serializeObject(),
     markdown = app.require("vendor/couchapp/lib/markdown");
   $.log(f)

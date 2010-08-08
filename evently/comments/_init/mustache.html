@@ -5,12 +5,12 @@
     <div class="avatar">
       {{#gravatar_url}}<img src="{{gravatar_url}}"/>{{/gravatar_url}}
       <div class="name">
-        {{by}}
+        {{nickname}}
       </div>
     </div>
-    <p>{{{comment}}}</p>
-    <em><span class="date">{{at}}</span></em>
-    <div class="clear"></div>
+  
+      <p>{{{comment}}}</p>
+      <em><span class="date">{{at}}</span></em>
   </li>
   {{/comments}}
 </ul>
@@ -21,4 +21,5 @@
   <textarea name="comment" rows="4" cols="60"></textarea>
    <input type="hidden" name="topic" value="{{topic}}">
   <p><input type="submit" value="Save Comment"></p>
+  <p><em>* I'd be happy to make this Markdown instead if someone patches <a href="http://attacklab.net/showdown/">Showdown</a> to have a safe mode.</em></p>
 </form>

@@ -1,8 +1,6 @@
 {{>header}}
-
-    <div id="wiki">
-      <div class="wiki">{{{body}}}</div>
-    </div>
+    <div id="tools"></div>
+    <div id="wiki">{{{body}}}</div>
     <div id="comments"></div>
     {{#has_atts}}
     <div id="files">
@@ -13,9 +11,8 @@
         {{/atts}}
       </ul>
     </div>
-    
     {{/has_atts}}
-    
+  </body>
   <script src="/script/myloader.js"></script>
   <script src="/_utils/script/base64.js"></script>
   <script src="/_utils/script/jquery.form.js"></script>
@@ -35,6 +32,4 @@
       design : "pages"
     });
   </script>
-  
-{{>footer}}
-
+</html>

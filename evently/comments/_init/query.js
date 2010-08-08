@@ -2,7 +2,8 @@ function() {
   var docid = $$("#wiki").docid;
   return {
     view : "recent-comments",
-    endkey : [docid, {}],
-    startkey : [docid]
+    startkey : [docid, {}],
+    endkey : [docid],
+    descending : true
   };
 };

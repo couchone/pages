@@ -5,11 +5,7 @@ I was tired of all the complicated wikis that required some kind of application 
 To deploy this you need to point a DNS name at your Couch (or use `/etc/hosts`), and then configure your CouchDB to have a vhost like:
 
     [vhosts]
-    mydnsname.com = /pages/_design/pages/_rewrite
-
-You can also add this configuration option with curl:
-
-    curl -X PUT http://localhost:5984/_config/vhosts/mydnsname.com -d '"/pages/_design/pages/_rewrite"'
+    mydnsname.com:5984 = /pages/_design/pages/_rewrite
 
 This app requires that it be deployed to a database called `pages`. I'd like to make that more dynamic, but I haven't quite gotten around to it yet (maybe I never will, that's where *you* come in.)
 
