@@ -7,7 +7,15 @@ body {
 h1 {
   margin:0;
   font-weight:normal;
-  font-size:2em;
+  font-size:2.2em;
+}
+
+h2 {
+  font-size:1.7em;
+}
+
+a.missing {
+  color : #d00;
 }
 
 #header {
@@ -49,8 +57,17 @@ p.menu a {
   max-width:35%;
 }
 
-#wiki {
+#wiki .wiki {
+  width:65%;
   margin:8px;
+}
+
+#wiki pre {
+  background:#ddd;
+  padding:4px;
+}
+#wiki code {
+  background:#ddd;
 }
 
 #comments {
@@ -84,9 +101,9 @@ p.menu a {
   padding:8px;
 }
 
-.markdown-help {
-  float:left;
-  margin-left:20px;
+.preview {
+  float:right;
+  font-size:80%;
   width:37%;
 }
 
