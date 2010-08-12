@@ -1,7 +1,7 @@
 function(doc) {
-  var app = $$(this).app, markdown = app.require("vendor/couchapp/lib/markdown");
+  var app = $$(this).app, wiki = app.require("lib/wiki");
   return {
-    body: markdown.encode(doc.markdown)
+    body: wiki.encode(doc.markdown)
   }
 
 };

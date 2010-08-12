@@ -1,7 +1,7 @@
 function(doc, req) {
   var name, stub, ddoc = this,
     mustache = require("vendor/couchapp/lib/mustache"),
-    markdown = require("vendor/couchapp/lib/markdown"),
+    wiki = require("lib/wiki"),
     data = {
       docid : JSON.stringify(req.id),
       id : req.id,
@@ -10,7 +10,7 @@ function(doc, req) {
     };
   if (doc) {
     if (doc.markdown) {
-      data.body = markdown.encode(doc.markdown);
+      data.body = wiki.encode(doc.markdown);
     }
     data.title = doc.title;
     data.title_json = JSON.stringify(doc.title);
