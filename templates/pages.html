@@ -8,6 +8,12 @@
   <script src="../script/myloader.js"></script>
   <script src="/_utils/script/base64.js"></script>
   <script type="text/javascript" charset="utf-8">
+    var opts = {};
+    if (document.location.pathname.indexOf("_design") == -1) {
+      // we are in a vhost
+      opts.db = "pages";
+      opts.design = "pages";
+    };
     $.couch.app(function(app) {
       $(".date").prettyDate();
       $("#account").evently("account", app);
@@ -15,9 +21,6 @@
       pr.mustache = pr.all; // mod the template for this page
       $("#profile").evently("profile", app);
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
-    },{
-      db : "pages",
-      design : "pages"
-    });
+    }, opts);
   </script>
 </html>
