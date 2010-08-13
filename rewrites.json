@@ -34,14 +34,16 @@
     "from" : "/pages/recent",
     "to" : "_list/pages/recent-changes",
     "query" : {
-      "descending" : true
+      "descending" : true,
+      "limit" : 20
     }
   },
   {
     "from" : "/pages/comments",
     "to" : "_list/comments/all-comments",
     "query" : {
-      "descending" : true
+      "descending" : true,
+      "limit" : 20
     }
   },
   {

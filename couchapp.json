@@ -1,4 +1,5 @@
 {
     "name": "CouchApp.org",
-    "description": "Home of Portable CouchDB Applications"
+    "description": "Home of Portable CouchDB Applications",
+    "index" : "_rewrite/page/index"
 }
