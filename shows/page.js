@@ -5,7 +5,7 @@ function(doc, req) {
     data = {
       docid : JSON.stringify(req.id),
       id : req.id,
-      path : "/page/"+req.id,
+      path : "../page/"+req.id,
       site_title : this.couchapp.name
     };
   if (doc) {

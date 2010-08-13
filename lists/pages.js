@@ -10,7 +10,6 @@ function() {
     };
   provides("html", function() {
     while (row = getRow()) {
-      log(row)
       data.pages.push({
         title : row.value.title,
         id : row.id,
