@@ -1,4 +1,5 @@
 {
     "name": "CouchApp Pages",
-    "description": "A Simple CouchApp Wiki"
+    "description": "A Simple CouchApp Wiki",
+    "index" : "_rewrite/page/index"
 }
