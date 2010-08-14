@@ -14,7 +14,7 @@ function(doc, req) {
     }
     data.title = doc.title;
     data.title_json = JSON.stringify(doc.title);
-    data.begin = "/";
+    data.begin = "";
     data.atts = [];
     if (doc._attachments) {
       for (name in doc._attachments) {
