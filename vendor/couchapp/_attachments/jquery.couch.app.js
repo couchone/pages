@@ -133,7 +133,7 @@
       dname = opts.design || fragments[index + 4];
     $.couch.urlPrefix = urlPrefix;
     var db = $.couch.db(dbname),
-      design = new Design(db, dname, opts.code);
+      design = new Design(db, dname, opts.load_path);
     var appExports = $.extend({
       db : db,
       design : design,
@@ -148,6 +148,11 @@
         appExports.require = makeRequire(ddoc);
       }
       appFun.apply(appExports, [appExports]);
+    }
+    if (opts.ddoc) {
+      // allow the ddoc to be embedded in the html
+      // to avoid a second http request
+      $.couch.app.ddocs[design.doc_id] = opts.ddoc;
     }
     if ($.couch.app.ddocs[design.doc_id]) {
       $(function() {handleDDoc($.couch.app.ddocs[design.doc_id])});
