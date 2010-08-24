@@ -12,6 +12,10 @@
     "to" : "style/*"
   },
   {
+    "from" : "images/*",
+    "to" : "images/*"
+  },
+  {
     "from" : "vendor/*",
     "to" : "vendor/*"
   },
