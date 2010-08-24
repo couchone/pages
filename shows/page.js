@@ -1,13 +1,13 @@
 function(doc, req) {
-  var code = require("vendor/couchapp/lib/code").ddoc(this),
-    ddoc_code = JSON.stringify(code);
   // top two lines have to come first or else parent references in the ddoc
   // which are created by calls to require will break JSON.stringify.
   var name, stub, ddoc = this,
     mustache = require("vendor/couchapp/lib/mustache"),
     wiki = require("lib/wiki"),
     data = {
-      ddoc : ddoc_code,
+      ddoc : JSON.stringify(require("vendor/couchapp/lib/code").ddoc(ddoc), function(key, value) {
+        return (key == "parent") ? undefined : value;
+      }),
       docid : JSON.stringify(req.id),
       id : req.id,
       path : "../page/"+req.id,
