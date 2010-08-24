@@ -47,7 +47,7 @@ p.menu a {
   border-radius: 5px;
 }
 
-#tools {
+#tools div {
   float:right;
   clear:right;
   border-bottom:1px solid #abc;
