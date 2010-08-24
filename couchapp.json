@@ -1,5 +1,16 @@
 {
-    "name": "CouchApp.org",
-    "description": "Home of Portable CouchDB Applications",
-    "index" : "_rewrite/page/index"
+  "name": "CouchApp.org",
+  "description": "Home of Portable CouchDB Applications",
+  "index" : "_rewrite/page/index",
+  "load" : {
+    "app" : [
+      "lib",
+      "evently",
+      "vendor/couchapp/evently",
+      "vendor/couchapp/lib/linkup",
+      "vendor/couchapp/lib/markdown",
+      "vendor/couchapp/lib/mustache",
+      "vendor/couchapp/lib/md5"
+    ]
+  }
 }

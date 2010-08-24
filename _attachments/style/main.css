@@ -20,7 +20,11 @@ a.missing {
 
 #header {
   background:#f3f3f7;
-  padding:8px;
+/*  background: #f3f3f7 url(/pages/_design/pages/images%2fpaper.png) repeat-x;*/
+  padding:10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #account {
@@ -33,6 +37,7 @@ a.missing {
   background:#cde;
   margin-bottom:8px;
   float:right;
+  border-left:1px solid #AABBCC;
 }
 
 p.menu {
@@ -47,11 +52,12 @@ p.menu a {
   border-radius: 5px;
 }
 
-#tools {
+#tools div {
   float:right;
   clear:right;
   border-bottom:1px solid #abc;
   border-top:1px solid #abc;
+  border-left:1px solid #AABBCC;
   background:#cde;
   padding:8px;
   max-width:35%;
@@ -105,6 +111,8 @@ p.menu a {
   float:right;
   font-size:80%;
   width:37%;
+  background:#eee;
+  padding:4px;
 }
 
 .markdown-help pre {
@@ -118,19 +126,39 @@ p.menu a {
   width:60%;
 }
 
-.preview {
-  background:#eee;
-  padding:4px;
-}
-
 textarea[name=markdown] {
   width:100%;
 }
+input[type=submit] {
+  margin:10px;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  border: 1px solid rgba(0,0,0,0.25);
+  border-bottom-left-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+  background: #222 url(../../images/button-overlay.png) repeat-x;
+  display: inline-block;
+  padding: 5px 10px 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #111;
+}
 
 form {
-  padding:4px;
-  margin:6px;
-  background-color:#ddd;  
+  padding:10px;
+  margin:10px;
+  background-color:#ddd;
+	border: 1px solid #b1b1b1;
 }
 
 div.avatar {

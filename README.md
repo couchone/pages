@@ -70,3 +70,8 @@ This pushes to the `default` as specified. To push to the `public` you'd run:
     couchapp push public
 
 Of course you can continue to add more deployment targets as you see fit, and give them whatever names you like.
+
+
+## License
+
+Licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html)
