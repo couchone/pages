@@ -25,10 +25,20 @@ a.missing {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  min-height:40px;
 }
 
 #account {
   float:right;
+}
+
+#account form {
+  margin:0;
+  padding-top:4px;
+  padding-bottom:4px;
+  margin-top:-10px;
+  border:none;
+  background:none;
 }
 
 #profile {
