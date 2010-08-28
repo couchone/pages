@@ -86,6 +86,12 @@ p.menu a {
   background:#ddd;
 }
 
+#wiki .wiki ol,
+#wiki .wiki ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 #comments {
   margin:4px;
   padding:4px;
