@@ -2,11 +2,18 @@
 
 body {
   font:1em Helvetica, sans-serif;
+  line-height: 1.2em;
+  color: #333;
+}
+
+a {
+  border-bottom: 2px solid #CCC;
+  text-decoration: none;
+  color: #569;
 }
 
 h1 {
-  margin:0;
-  font-weight:normal;
+  font-weight:bold;
   font-size:2.2em;
 }
 
@@ -21,12 +28,23 @@ a.missing {
 #header {
   background:#f3f3f7;
 /*  background: #f3f3f7 url(/pages/_design/pages/images%2fpaper.png) repeat-x;*/
-  padding:10px;
+  padding: 32px 32px 16px 32px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   min-height:40px;
 }
+
+#header h1 {
+  margin:0;
+  font-weight:bold;
+  font-size:2.2em;
+}
+
+#header h1 a {
+  border: none;
+}
+
 
 #account {
   float:right;
@@ -73,9 +91,14 @@ p.menu a {
   max-width:35%;
 }
 
+#wiki, #comments, #files {
+  margin: 12px 0px;
+  padding: 12px 32px;
+}
+
 #wiki .wiki {
   width:65%;
-  margin:8px;
+  margin:32px 0;
 }
 
 #wiki pre {
@@ -87,8 +110,6 @@ p.menu a {
 }
 
 #comments {
-  margin:4px;
-  padding:4px;
   background:#efeeef;
 }
 
@@ -97,13 +118,15 @@ p.menu a {
 }
 
 #comments li {
-  margin:4px;
-  padding:4px;
+  margin:4px 0px;
+  padding:4px 0px;
   background:#dfdcdf;
+  list-style-type: none;
 }
 
-#comments ul li {
-  list-style-type: none;
+#comments ul {
+  margin: 0;
+  padding: 0;
 }
 
 .date {
@@ -165,10 +188,10 @@ input[type=submit]:hover {
 }
 
 form {
-  padding:10px;
-  margin:10px;
+  padding:2px;
+  margin:0;
   background-color:#ddd;
-	border: 1px solid #b1b1b1;
+  border: 1px solid #b1b1b1;
 }
 
 div.avatar {
